@@ -69,7 +69,20 @@ git checkout {commit number}
     HEAD is now at ec148a8 add articles on readme
 
 git checkout main  
+git checkout -f main  
 
+# git branch commands
+git branch feature-branch  
+git checkout feature-branch   
+    M       readme.md  
+    Switched to branch 'feature-branch'
 
+git checkout main
+    M       readme.md  
+    Switched to branch 'main'  
+    Your branch is up to date with 'origin/main'.
+
+gti branch -b {new branch}  
+git branch {new branch} {source branch}
 
 
