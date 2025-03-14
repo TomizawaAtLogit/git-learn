@@ -15,7 +15,7 @@ git push -u origin main
 4. make a .gitignore file  
 touch .gitignore
 
-# commit file and push  
+# commit file and push commands
 git add .  
 git commit -m "add readme"
 
@@ -40,4 +40,10 @@ git push --set-upstream origin main
     To https://github.com/TomizawaAtLogit/git-learn.git  
     * [new branch]      main -> main  
     branch 'main' set up to track 'origin/main'.
+
+# git log and status commands
+git log  
+git log --oneline
+git status  
+
 
