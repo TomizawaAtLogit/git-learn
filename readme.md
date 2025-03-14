@@ -85,4 +85,21 @@ git checkout main
 gti branch -b {new branch}  
 git branch {new branch} {source branch}
 
+git add .  
+git commit -m 'add new branch'  
+git push --set-upstream origin feature-branch  
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+    remote: 
+    remote: Create a pull request for 'feature-branch' on GitHub by visiting:
+    remote:      https://github.com/TomizawaAtLogit/git-learn/pull/new/feature-branch
+    remote:
+    To https://github.com/TomizawaAtLogit/git-learn.git
+    * [new branch]      feature-branch -> feature-branch
+    branch 'feature-branch' set up to track 'origin/feature-branch'.
 
+git push -u origin feature-branch  
+git push  
+
+git pull
+
+# github pull request
