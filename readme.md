@@ -43,7 +43,9 @@ git push --set-upstream origin main
 
 # git log and status commands
 git log  
-git log --oneline
+git log --oneline  
 git status  
+
+# git checkout commands
 
 
