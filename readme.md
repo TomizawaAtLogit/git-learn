@@ -117,3 +117,24 @@ git push -u origin feature-branch
 =======
 git checkout -f main  
 
+2. after merged, delete branch by github ui    
+git checkout main  
+git pull origin main  
+    From https://github.com/TomizawaAtLogit/git-learn
+    * branch            main       -> FETCH_HEAD
+    Updating 09d950d..fd9c30e
+    Fast-forward
+    readme.md | 44 +++++++++++++++++++++++++++++---------------
+    1 file changed, 29 insertions(+), 15 deletions(-)
+
+git log --oneline
+
+1. Clone the repogitory  
+2. Create a new branch from the main or another branch  
+3. Make your changes  
+4. Push the branch to the remote repo  
+5. Open a Pull Request  
+6. Merge the changes  
+7. Pull the merged changes into your main branch  
+8. Repeat from step 2  
+
