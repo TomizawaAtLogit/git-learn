@@ -1,4 +1,4 @@
-# GIT command
+# GIT command reference
 
 ## set up  
 1. make new ropogitory on github
@@ -13,7 +13,7 @@ git branch -M main
 ```
 git push -u origin main
 ```
-error: failed to push some refs to 'https://github.com/TomizawaAtLogit/git-learn.git'
+_error: failed to push some refs to 'https://github.com/TomizawaAtLogit/git-learn.git'_
 
 3. make a readme.md file  
 4. make a .gitignore file
@@ -27,8 +27,8 @@ touch .gitignore
 
     git push
 
-fatal: The current branch main has no upstream branch.  
-To push the current branch and set the remote as upstream, use
+_fatal: The current branch main has no upstream branch._  
+_To push the current branch and set the remote as upstream, use_
 
     git push --set-upstream origin main
 
