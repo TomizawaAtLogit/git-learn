@@ -1,5 +1,15 @@
 # GIT command reference
 
+### github workflow
+1. Clone the repogitory  
+2. Create a new branch from the main or another branch  
+3. Make your changes  
+4. Push the branch to the remote repo  
+5. Open a Pull Request  
+6. Merge the changes  
+7. Pull the merged changes into your main branch  
+8. Repeat from step 2  
+
 ## set up  
 1. make new ropogitory on github
 
@@ -11,7 +21,6 @@ git remote add origin https://github.com/TomizawaAtLogit/git-learn.git
 ```
 git branch -M main
 ```
-
 ```
 git push -u origin main
 ```
@@ -24,8 +33,9 @@ touch .gitignore
 ```
 ## commit file and push commands
 ```
-git add .  
+git add .
 ```
+```git add .```
 ```
 git commit -m "add readme"
 ```
@@ -175,15 +185,6 @@ git pull origin main
 ```
 git log --oneline
 ```
-### github workflow
-1. Clone the repogitory  
-2. Create a new branch from the main or another branch  
-3. Make your changes  
-4. Push the branch to the remote repo  
-5. Open a Pull Request  
-6. Merge the changes  
-7. Pull the merged changes into your main branch  
-8. Repeat from step 2  
 
 ## Solve merge confrict
 ```
@@ -272,10 +273,13 @@ git push --set-upstream origin dev-tomizawa
 This is a urgent bugfix.  
 ///////////////////////////
 
-2. pull requst and merge to main branch 
-    git pull  
-    git stash list  
-
+2. pull requst and merge to main branch
+```
+git pull
+```
+```
+git stash list  
+```
 >stash@{0}: WIP on dev-tomizawa: 7899b18 finalyze revert
 ```
 git stash apply stash@{0}  
