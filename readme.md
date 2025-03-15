@@ -183,7 +183,6 @@ git status
 
     nothing to commit, working tree clean
 
-This is a urgent bugfix.
 
 # git stash
 git branch dev-tomizawa  
@@ -203,3 +202,22 @@ git push --set-upstream origin dev-tomizawa
 
 
 This is a urgent bugfix.
+2. pull requst and merge to main branch 
+git pull  
+git stash list  
+    stash@{0}: WIP on dev-tomizawa: 7899b18 finalyze revert
+
+git stash apply stash@{0}  
+    Auto-merging readme.md
+    CONFLICT (content): Merge conflict in readme.md
+    On branch dev-tomizawa
+    Your branch is up to date with 'origin/dev-tomizawa'.
+
+    Unmerged paths:
+    (use "git restore --staged <file>..." to unstage)
+    (use "git add <file>..." to mark resolution)
+            both modified:   readme.md
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+
