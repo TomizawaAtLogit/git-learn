@@ -9,6 +9,7 @@
 git remote add origin https://github.com/TomizawaAtLogit/git-learn.git  
 git branch -M main  
 git push -u origin main  
+
     error: failed to push some refs to 'https://github.com/TomizawaAtLogit/git-learn.git'
 
 3. make a readme.md file  
@@ -49,6 +50,7 @@ git status
 # git checkout commands
 git log --oneline  
 git checkout {commit number}  
+
     Note: switching to 'ec148a8'.
 
     You are in 'detached HEAD' state. You can look around, make experimental
@@ -74,10 +76,12 @@ git checkout -f main
 # git branch commands
 git branch feature-branch  
 git checkout feature-branch  
+
     M readme.md  
     Switched to branch 'feature-branch'
 
 git checkout main M readme.md  
+
     Switched to branch 'main'  
     Your branch is up to date with 'origin/main'.
 
@@ -88,6 +92,7 @@ git add .
 git commit -m 'add new branch'  
 
 git push --set-upstream origin feature-branch  
+
     Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0) remote: remote: Create a pull request for 'feature-branch' on GitHub by visiting: remote: https://github.com/TomizawaAtLogit/git-learn/pull/new/feature-branch remote: To https://github.com/TomizawaAtLogit/git-learn.git * [new branch] feature-branch -> feature-branch branch 'feature-branch' set up to track 'origin/feature-branch'.
 
 git push -u origin feature-branch  
@@ -96,8 +101,9 @@ git push
 git pull  
 
 # github pull request
-Checkout via the command line
-If you do not want to use the merge button or an automatic merge cannot be performed, you can perform a manual merge on the command line. However, the following steps are not applicable if the base branch is protected.
+
+    Checkout via the command line
+    If you do not want to use the merge button or an automatic merge cannot be performed, you can perform a manual merge on the command line. However, the following steps are not applicable if the base branch is protected.
 
 Step 1 Clone the repository or update your local repository with the latest changes.
 git pull origin main  
@@ -111,15 +117,17 @@ git merge main
 Step 4 Fix the conflicts and commit the result.
 
 See Resolving a merge conflict using the command line for step-by-step instructions on resolving merge conflicts.  
+
 Step 5 Push the changes.  
 git push -u origin feature-branch
 
 =======
 git checkout -f main  
 
-2. after merged, delete branch by github ui    
+2. after merged, delete branch by github ui  
 git checkout main  
 git pull origin main  
+
     From https://github.com/TomizawaAtLogit/git-learn
     * branch            main       -> FETCH_HEAD
     Updating 09d950d..fd9c30e
@@ -146,14 +154,15 @@ git checkout {merged-branch}
 git merge main  
 
 # git reset
-this line will be deleted.
-This line also will be deleted.
+this line will be deleted.  
+This line also will be deleted.  
 
 git add .  
 git commit -m 'reset 1'  
 git log --oneline  
 git reset 3a19e51{commit hash}  
-git status  
+git status 
+
     On branch main
     Your branch is up to date with 'origin/main'.
 
@@ -165,6 +174,7 @@ git status
 1. change code  
 git log --oneline  
 git revert 2830863  
+
     Auto-merging readme.md
     CONFLICT (content): Merge conflict in readme.md
     error: could not revert 2830863... finalyze reset
@@ -177,6 +187,7 @@ git revert 2830863
     hint: Disable this message with "git config advice.mergeConflict false"
 
 git status
+
     On branch main
     Your branch is ahead of 'origin/main' by 2 commits.
     (use "git push" to publish your local commits)
@@ -187,9 +198,11 @@ git status
 # git stash
 git branch dev-tomizawa  
 git checkout dev-tomizawa  
+
     Switched to branch 'dev-tomizawa'
 
 git push --set-upstream origin dev-tomizawa  
+
     Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
     remote: 
     remote: Create a pull request for 'dev-tomizawa' on GitHub by visiting:
@@ -201,13 +214,15 @@ git push --set-upstream origin dev-tomizawa
 
 
 
-This is a urgent bugfix.
+This is a urgent bugfix.  
 2. pull requst and merge to main branch 
 git pull  
 git stash list  
+
     stash@{0}: WIP on dev-tomizawa: 7899b18 finalyze revert
 
 git stash apply stash@{0}  
+
     Auto-merging readme.md
     CONFLICT (content): Merge conflict in readme.md
     On branch dev-tomizawa
@@ -220,4 +235,7 @@ git stash apply stash@{0}
 
     no changes added to commit (use "git add" and/or "git commit -a")
 
+3. edit the conflict
+git add .  
+git commit -m 'finalyze stash'
 
