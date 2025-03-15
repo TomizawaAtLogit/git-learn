@@ -161,4 +161,25 @@ git status
     (use "git add <file>..." to update what will be committed)
     (use "git restore <file>..." to disc
 
+# git revert
+1. change code  
+git log --oneline  
+git revert 2830863  
+    Auto-merging readme.md
+    CONFLICT (content): Merge conflict in readme.md
+    error: could not revert 2830863... finalyze reset
+    hint: After resolving the conflicts, mark them with
+    hint: "git add/rm <pathspec>", then run
+    hint: "git revert --continue".
+    hint: You can instead skip this commit with "git revert --skip".
+    hint: To abort and get back to the state before "git revert",
+    hint: run "git revert --abort".
+    hint: Disable this message with "git config advice.mergeConflict false"
+
+git status
+    On branch main
+    Your branch is ahead of 'origin/main' by 2 commits.
+    (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
 
