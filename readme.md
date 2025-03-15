@@ -69,37 +69,51 @@ git checkout {commit number}
     HEAD is now at ec148a8 add articles on readme
 
 git checkout main  
-git checkout -f main  
+git checkout -f main
 
 # git branch commands
 git branch feature-branch  
-git checkout feature-branch   
-    M       readme.md  
+git checkout feature-branch  
+    M readme.md  
     Switched to branch 'feature-branch'
 
-git checkout main
-    M       readme.md  
+git checkout main M readme.md  
     Switched to branch 'main'  
     Your branch is up to date with 'origin/main'.
 
 gti branch -b {new branch}  
-git branch {new branch} {source branch}
+git branch {new branch} {source branch}  
 
 git add .  
 git commit -m 'add new branch'  
+
 git push --set-upstream origin feature-branch  
-    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-    remote: 
-    remote: Create a pull request for 'feature-branch' on GitHub by visiting:
-    remote:      https://github.com/TomizawaAtLogit/git-learn/pull/new/feature-branch
-    remote:
-    To https://github.com/TomizawaAtLogit/git-learn.git
-    * [new branch]      feature-branch -> feature-branch
-    branch 'feature-branch' set up to track 'origin/feature-branch'.
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0) remote: remote: Create a pull request for 'feature-branch' on GitHub by visiting: remote: https://github.com/TomizawaAtLogit/git-learn/pull/new/feature-branch remote: To https://github.com/TomizawaAtLogit/git-learn.git * [new branch] feature-branch -> feature-branch branch 'feature-branch' set up to track 'origin/feature-branch'.
 
 git push -u origin feature-branch  
 git push  
 
-git pull
+git pull  
 
 # github pull request
+Checkout via the command line
+If you do not want to use the merge button or an automatic merge cannot be performed, you can perform a manual merge on the command line. However, the following steps are not applicable if the base branch is protected.
+
+Step 1 Clone the repository or update your local repository with the latest changes.
+git pull origin main  
+
+Step 2 Switch to the head branch of the pull request.  
+git checkout feature-branch
+
+Step 3 Merge the base branch into the head branch.  
+git merge main
+
+Step 4 Fix the conflicts and commit the result.
+
+See Resolving a merge conflict using the command line for step-by-step instructions on resolving merge conflicts.  
+Step 5 Push the changes.  
+git push -u origin feature-branch
+
+=======
+git checkout -f main  
+
