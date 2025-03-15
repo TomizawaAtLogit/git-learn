@@ -7,9 +7,9 @@
 …or push an existing repository from the command line
 
     git remote add origin https://github.com/TomizawaAtLogit/git-learn.git  
-    git branch -M main  
-    git push -u origin main
+    git branch -M main
 
+    git push -u origin main  
 error: failed to push some refs to 'https://github.com/TomizawaAtLogit/git-learn.git'
 
 3. make a readme.md file  
