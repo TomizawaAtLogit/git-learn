@@ -135,9 +135,10 @@ force option
     git checkout -f main  
 
 2. after merged, delete branch by github ui  
+    ```
     git checkout main  
     git pull origin main  
-
+    ```
 >From https://github.com/TomizawaAtLogit/git-learn  
 >* branch            main       -> FETCH_HEAD  
 >Updating 09d950d..fd9c30e  
