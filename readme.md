@@ -117,12 +117,11 @@ git checkout main M readme.md
 ```
 >Switched to branch 'main'  
 >Your branch is up to date with 'origin/main'.
-```
+
 **_git branch -b {new branch}_**  
-```
-```
+
 **_git branch {new branch} {source branch}_**
-```
+
 ```
 git add .  
 ```
