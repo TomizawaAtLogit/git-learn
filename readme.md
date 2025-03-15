@@ -32,8 +32,8 @@ _To push the current branch and set the remote as upstream, use_
 
     git push --set-upstream origin main
 
-To have this happen automatically for branches without a tracking  
-upstream, see 'push.autoSetupRemote' in 'git help config'.
+>To have this happen automatically for branches without a tracking  
+>upstream, see 'push.autoSetupRemote' in 'git help config'.
 
     git push --set-upstream origin main
 
