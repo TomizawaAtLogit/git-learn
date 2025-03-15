@@ -114,7 +114,6 @@ See Resolving a merge conflict using the command line for step-by-step instructi
 Step 5 Push the changes.  
 git push -u origin feature-branch
 
-
-
-
+=======
+git checkout -f main  
 
