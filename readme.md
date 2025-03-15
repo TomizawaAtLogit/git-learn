@@ -146,4 +146,19 @@ git checkout {merged-branch}
 git merge main  
 
 # git reset
+this line will be deleted.
+This line also will be deleted.
+
+git add .  
+git commit -m 'reset 1'  
+git log --oneline  
+git reset 3a19e51{commit hash}  
+git status  
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to disc
+
 
