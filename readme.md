@@ -184,3 +184,22 @@ git status
     nothing to commit, working tree clean
 
 This is a urgent bugfix.
+
+# git stash
+git branch dev-tomizawa  
+git checkout dev-tomizawa  
+    Switched to branch 'dev-tomizawa'
+
+git push --set-upstream origin dev-tomizawa  
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+    remote: 
+    remote: Create a pull request for 'dev-tomizawa' on GitHub by visiting:
+    remote:      https://github.com/TomizawaAtLogit/git-learn/pull/new/dev-tomizawa
+    remote:
+    To https://github.com/TomizawaAtLogit/git-learn.git
+    * [new branch]      dev-tomizawa -> dev-tomizawa
+    branch 'dev-tomizawa' set up to track 'origin/dev-tomizawa'.
+
+
+
+This is a urgent bugfix.
