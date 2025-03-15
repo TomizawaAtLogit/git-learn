@@ -1,4 +1,4 @@
-### GIT command
+# GIT command
 
 ## set up  
 1. make new ropogitory on github
@@ -17,10 +17,11 @@ error: failed to push some refs to 'https://github.com/TomizawaAtLogit/git-learn
 
 3. make a readme.md file  
 4. make a .gitignore file
+```
+touch .gitignore
+```
+## commit file and push commands
 
-    touch .gitignore
-
-# commit file and push commands
     git add .  
     git commit -m "add readme"
 
@@ -46,12 +47,12 @@ To https://github.com/TomizawaAtLogit/git-learn.git
 * [new branch]      main -> main  
 branch 'main' set up to track 'origin/main'.
 
-# git log and status commands
+## git log and status commands
     git log  
     git log --oneline  
     git status  
 
-# git checkout commands
+## git checkout commands
     git log --oneline  
     git checkout {commit number}  
 
@@ -77,7 +78,7 @@ HEAD is now at ec148a8 add articles on readme
     git checkout main  
     git checkout -f main
 
-# git branch commands
+## git branch commands
     git branch feature-branch  
     git checkout feature-branch  
 
@@ -104,7 +105,7 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0) remote: remote: Cr
 
     git pull  
 
-# github pull request
+## github pull request
 
 Checkout via the command line  
 If you do not want to use the merge button or an automatic merge cannot be performed, you can perform a manual merge on the command line. However, the following steps are not applicable if the base branch is protected.
@@ -146,6 +147,7 @@ readme.md | 44 +++++++++++++++++++++++++++++---------------
 
     git log --oneline
 
+### github workflow
 1. Clone the repogitory  
 2. Create a new branch from the main or another branch  
 3. Make your changes  
@@ -155,14 +157,14 @@ readme.md | 44 +++++++++++++++++++++++++++++---------------
 7. Pull the merged changes into your main branch  
 8. Repeat from step 2  
 
-# Solve merge confrict
+## Solve merge confrict
     git checkout main  
     git pull  
 
     git checkout {merged-branch}  
     git merge main  
 
-# git reset
+## git reset
 this line will be deleted.  
 This line also will be deleted.  
 
@@ -179,7 +181,7 @@ Changes not staged for commit:
 (use "git add <file>..." to update what will be committed)  
 (use "git restore <file>..." to disc
 
-# git revert
+## git revert
 1. change code  
     git log --oneline  
     git revert 2830863  
@@ -204,7 +206,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 nothing to commit, working tree clean
 
 
-# git stash
+## git stash
     git branch dev-tomizawa  
     git checkout dev-tomizawa  
 
