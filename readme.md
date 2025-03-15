@@ -1,14 +1,14 @@
 # GIT command reference
 
 ### github workflow
-1. Clone the repogitory  
-2. Create a new branch from the main or another branch  
-3. Make your changes  
-4. Push the branch to the remote repo  
-5. Open a Pull Request  
-6. Merge the changes  
-7. Pull the merged changes into your main branch  
-8. Repeat from step 2  
+### 1. Clone the repogitory  
+### 2. Create a new branch from the main or another branch  
+### 3. Make your changes  
+### 4. Push the branch to the remote repo  
+### 5. Open a Pull Request  
+### 6. Merge the changes  
+### 7. Pull the merged changes into your main branch  
+### 8. Repeat from step 2  
 
 ## set up  
 1. make new ropogitory on github
@@ -35,7 +35,6 @@ touch .gitignore
 ```
 git add .
 ```
-```git add .```
 ```
 git commit -m "add readme"
 ```
@@ -103,6 +102,7 @@ git checkout main
 ```
 git checkout -f main
 ```
+
 ## git branch commands
 ```
 git branch feature-branch  
@@ -117,10 +117,12 @@ git checkout main M readme.md
 ```
 >Switched to branch 'main'  
 >Your branch is up to date with 'origin/main'.
-
-**gti branch -b {new branch}**  
-
-**git branch {new branch} {source branch}**
+```
+**_git branch -b {new branch}_**  
+```
+```
+**_git branch {new branch} {source branch}_**
+```
 ```
 git add .  
 ```
