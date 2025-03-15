@@ -138,3 +138,12 @@ git log --oneline
 7. Pull the merged changes into your main branch  
 8. Repeat from step 2  
 
+# Solve merge confrict
+git checkout main  
+git pull  
+
+git checkout {merged-branch}  
+git merge main  
+
+# git reset
+
