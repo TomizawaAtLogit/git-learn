@@ -224,10 +224,13 @@ git status
 >(use "git restore <file>..." to disc)
 
 ## git revert
-1. change code
+**1. change code**
+**2. find commit hash**
 ```
 git log --oneline
 ```
+**3. revert code**
+***git revert {commit hash}***
 ```
 git revert 2830863
 ```
@@ -249,7 +252,7 @@ git status
 >(use "git push" to publish your local commits)  
 > 
 >nothing to commit, working tree clean
-
+**4. solve conflict**
 
 ## git stash
 ```
@@ -271,14 +274,24 @@ git push --set-upstream origin dev-tomizawa
 >* [new branch]      dev-tomizawa -> dev-tomizawa  
 >branch 'dev-tomizawa' set up to track 'origin/dev-tomizawa'.  
 
+**1. change code as normal development**
+```
+git stash
+```
+**2. example: solve urgent bug fix** 
+```
+git pull origin main  
+```
+```
+git pull
+```
 ///////////////////////////  
 This is a urgent bugfix.  
 ///////////////////////////
 
-2. pull requst and merge to main branch
-```
-git pull
-```
+**3. add, commit and pull request to finish bugfix**
+
+**4. back to normal dev**
 ```
 git stash list  
 ```
@@ -298,7 +311,7 @@ git stash apply stash@{0}
 > 
 >no changes added to commit (use "git add" and/or "git commit -a")  
 
-3. edit the conflict
+**5. edit the conflict if needed**
 ```
 git add .
 ```
